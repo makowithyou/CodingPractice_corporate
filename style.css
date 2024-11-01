@@ -1,57 +1,82 @@
 /* 共通 css */
 :root {
-    --main-bg-color: ;
-    --sub-bg-color: ;
-    --font-color: ;
-    --border-color: ;
+    --main-bg-color: #F0F0F0;
+    --sub-bg-color: #FFFFFF;
+    --font-color: #000000;
+    --border-color: #000000;
 }
 * {
     box-sizing: border-box;
-    color: ;
+    color: var(--font-color);
 }
 body {
-    /* https://ics.media/entry/200317/#各osのフォント指定はどれがいいか */
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: Meiryo, sans-serif;
     margin: unset;
+    background-color: var(--main-bg-color);
 }
 img {
     display: block;
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, h2, p, ul {
     margin: unset;
     padding: unset;
 }
 h2 {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-size: 36px;
+    letter-spacing: 0.05em;
 }
-a, a:visited {
-    font-weight: ;
-    font-size: px;
-    color: ;
+p {
+    font-size: 16px;
+}
+li{ 
+    list-style: none;
+    font-size: 14px;
+}
+a, a:visited, time, h3 { 
+    font-size: 14px;
+    color: var(--font-color);
     text-decoration: none;
+    list-style: none;
 }
 p.copy {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-size: 12px;
 }
 div.container {
-    max-width: px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
-
-@media (min-width: 480px) {
-  /* 中型の画面向けの CSS */
+img.logo {
+    width: 80px;
+    height: 20px;
+    object-fit: contain;
 }
-
-@media (min-width: 800px) {
+header {
+    padding: 16px 16px 15px 16px;
+}
+h1 {
+    margin-bottom: 8px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+li:not(:last-of-type) {
+    margin-right: 30px;
+}
+a.contact {
+    display: none;
+}
+img.mainvisual {
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+}
+footer {
+    padding: 0 16px;
+    background-color: var(--sub-bg-color);
+}
+@media (min-width: 900px) {
   /* 広い画面向けの CSS */
-}
-
-@media (min-width: 1100px) {
-  /* 本当に広い画面向けの CSS */
 }
