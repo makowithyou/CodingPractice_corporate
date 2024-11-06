@@ -25,15 +25,13 @@ h2 {
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 0.05em;
+    line-height: 1;
 }
 h3 { 
     font-weight: normal;
     font-size: 14px;
 }
-p {
-    font-size: 16px;
-}
-li{ 
+p ,li{ 
     list-style: none;
     font-size: 14px;
 }
@@ -42,6 +40,10 @@ a, a:visited, time {
     color: var(--font-color);
     text-decoration: none;
     list-style: none;
+}
+span {
+    font-size: 12px;
+    color: #FFFFFF;
 }
 p.copy {
     font-size: 12px;
@@ -58,7 +60,9 @@ img.logo {
     object-fit: contain;
 }
 header {
-    padding: 16px 16px 15px 16px;
+    margin: 0 16px;
+    padding-top: 16px;
+    padding-bottom: 15px;
 }
 h1 {
     margin-bottom: 8px;
@@ -77,13 +81,15 @@ img.mainvisual {
     width: 100%;
     height: calc(100vh - 80px);
     object-fit: cover;
+    padding-bottom: 80px;
 }
 h2 {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 h3 {
     padding-bottom: 24px;
     position: relative;
+    margin-bottom: 34px;
 }
 h3::after {
     content: "";
@@ -93,6 +99,45 @@ h3::after {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+section.news {
+    margin: 0 16px;
+    padding-bottom: 50px;
+}
+div.news_area {
+   padding-top: 10px;
+}
+div.news_detail {
+   padding-bottom: 40px;
+}
+time {
+    padding-right: 10px;
+}
+span {
+    background-color: black;
+    padding: 0 6px;
+}
+div.news_detail p {
+    padding-top: 16px;
+}
+section.about {
+    padding-bottom: 80px;
+}
+section.about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+section.about div {
+    margin: 0 16px;
+}
+section.business {
+    margin: 0 16px;
+}
+section.company {
+    background-color: white;
 }
 footer {
     padding: 0 16px;
