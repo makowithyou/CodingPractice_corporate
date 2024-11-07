@@ -10,7 +10,7 @@
     color: var(--font-color);
 }
 body {
-    font-family: Meiryo, sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     margin: unset;
     background-color: var(--main-bg-color);
 }
