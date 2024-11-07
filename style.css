@@ -141,6 +141,7 @@ section.business img {
     margin-bottom: 30px;
 }
 section.business p {
+    font-weight: bold;
     padding-bottom: 10px;
 }
 section.company {
