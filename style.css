@@ -159,8 +159,12 @@ section.company dt {
     margin-top: 20px;
     margin-bottom: 5px;
 }
-section.company dd:not(:last-of-type) {
+section.company dd {
     margin-bottom: 5px;
+    margin-inline-start: 14px;
+}
+section.company dd:last-of-type {
+    margin-bottom: unset;
 }
 section.company img {
     width: 100%;
