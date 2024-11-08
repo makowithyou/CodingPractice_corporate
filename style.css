@@ -184,6 +184,10 @@ footer p.copy {
 }
 @media (min-width: 900px) {
   /* 広い画面向けの CSS */
+img.logo {
+    width: 100px;
+    height: 25px;
+}
 header {
     margin: unset;
     padding: unset;
@@ -238,8 +242,7 @@ section.about img {
     margin-bottom: unset;
 }
 section.about div {
-    width: 45%;
-    margin: 0 70px;
+    margin: 0 5%;
     padding-top: 180px;
 }
 section.business {
